@@ -1786,19 +1786,18 @@
     .mail-background {
       background-color: #C6DBE9;
       border-radius: 25px;
-      width: 100%;
+      min-height: 80% !important;
     }
 
     .call-background {
       background-color: #C6DBE9;
       border-radius: 25px;
-      width: 100%;
+      min-height: 80% !important;
     }
 
     .coffe-background {
       background-color: #C6DBE9;
       border-radius: 25px;
-      width: 100%;
     }
 
     .mail-content,
@@ -1843,8 +1842,24 @@
       width: 50px;
       height: 50px;
     }
-    .footer{
+
+    .footer {
       max-height: 50px;
+    }
+
+    .button-minute {
+      font-size: 13px !important;
+    }
+    .gradient{
+      background: linear-gradient(45deg,#2FCAD3, #084C61) !important;
+    }
+    .mail, .call, .coffe{
+      position: relative;
+    }
+    .button-position{
+      position: absolute;
+      bottom: -10%;
+      right: 25px;
     }
   </style>
 
@@ -2034,7 +2049,7 @@
                   <table class="row">
                     <tbody>
                       <tr>
-                        <th class="small-12 large-4 columns first last mail-width">
+                        <th class="small-12 large-4 columns first last mail">
                           <table class="mail-background">
                             <tr>
                               <th>
@@ -2046,33 +2061,77 @@
                                   savoir de quelles manières votre </br>
                                   marque peut devenir</br>
                                   un super héros de la planète.</p>
+                                  <table class="spacer">
+                                    <tbody>
+                                      <tr>
+                                        <td height="10px" style="font-size:10px;line-height:10px;">&#xA0;</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                               </th>
-                              <th class="expander"></th>
+                            </tr>
+                          </table>
+                          <table class="button rounded button-position">
+                            <tr>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td class="gradient"><a href="#" class="button-minute button-mail">2 minutes</a></td>
+                                  </tr>
+                                </table>
+                              </td>
                             </tr>
                           </table>
                         </th>
-                        <th class="small-12 large-6 columns first last call-width">
+                        <th class="small-12 large-6 columns first last call">
                           <table class="call-background">
                             <tr>
                               <th>
                                 <img src="img/call.png" align="left" class="float-left call-logo">
-                                <h6 class="text-center call-title">Soyez prêts à ne plus jamais </br>
+                                <h6 class="text-center call-title">Soyez prêts à ne plus </br> jamais
                                   vouloir raccrocher.</h6>
                                 <p class="text-center call-content">Vous avez peu de temps à nous accorder et </br>
                                   trouvez très intéressant de savoir de quelles </br>
                                   manières vous pouvez également devenir un </br>
-                                  superhéros de la planète..</p>
+                                  superhéros de la planète</br>
+                                  ...
+                                  </p>
+                                  <table class="spacer">
+                                    <tbody>
+                                      <tr>
+                                        <td height="10px" style="font-size:10px;line-height:10px;">&#xA0;</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                               </th>
+                            </tr>
+                          </table>
+                          <table class="button rounded button-position">
+                            <tr>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td class="gradient"><a href="#" class="button-minute button-call">5 minutes</a></td>
+                                  </tr>
+                                </table>
+                              </td>
                             </tr>
                           </table>
                         </th>
                       </tr>
                     </tbody>
                   </table>
+                  <table class="spacer">
+                    <tbody>
+                      <tr>
+                        <td height="10px" style="font-size:10px;line-height:10px;">&#xA0;</td>
+                      </tr>
+                    </tbody>
+                  </table>
                   <table class="row">
                     <tbody>
                       <tr>
-                        <th class="small-12 large-12 columns first last">
+                        <th class="small-12 large-12 columns first last coffe">
                           <table class="coffe-background">
                             <tr>
                               <th>
@@ -2084,6 +2143,17 @@
                                   Une petite rencontre où l'on pourra vous présenter toutes les opportunités </br>
                                   d'humanisation de marque qui s'offrent à vous.</p>
                               </th>
+                            </tr>
+                          </table>
+                          <table class="button rounded button-position">
+                            <tr>
+                              <td>
+                                <table>
+                                  <tr>
+                                    <td class="gradient"><a href="#" class="button-minute button-coffe">30 minutes</a></td>
+                                  </tr>
+                                </table>
+                              </td>
                             </tr>
                           </table>
                         </th>
